@@ -1,0 +1,25 @@
+/*
+
+    Template Name: 
+    Template URI: 
+    Description:
+    Author: 
+    Author URI: 
+    Version: 1.0.0
+    
+*/
+
+// fontawesome 5 icon sass
+@import "fontawesome/fontawesome-root";
+
+// Setting ( all Variable) sass
+@import "settings";
+
+//mixin sass
+@import "allmixin";
+
+//base sass
+@import "default/default-root";
+
+//Component sass
+@import "component/component-root";

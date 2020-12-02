@@ -1,0 +1,61 @@
+.talk-footer {
+    background-image: url(./././../images/home-contact/dhal.svg);
+    background-position: center top;
+    height: 1760px;
+    margin-top: 140px;
+    @media (max-width:1200px) {
+        margin-top: 100px;
+        height: 1490px;
+    }
+}
+.talk {
+    &__inner {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &__form {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+
+        &-row {
+            border-radius: 5px;
+            margin-bottom: 20px;
+            position: relative;
+
+            & input,
+            & textarea {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: 'Poppins', sans-serif;
+                color: #9fa7b2;
+                width: 100%;
+                padding: 21px 55px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            }
+
+            & textarea {
+                padding: 21px 23px;
+            }
+            & input,
+            & textarea,
+            & button {
+                outline: none;
+            }
+            & img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 23px;
+            }
+            & .submit-btn {
+                font-family: 'Poppins', sans-serif;
+                width: 100%;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

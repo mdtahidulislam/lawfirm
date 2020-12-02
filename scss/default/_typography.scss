@@ -1,0 +1,226 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+    @include breakpoint(lg) {
+        font-size: 60%;
+    }
+    @include breakpoint(md) {
+        font-size: 55%;
+    }
+    @include breakpoint(xs) {
+        font-size: 50%
+    }
+    @media only screen and (max-width: 479px) {
+        font-size: 45%;
+    }
+    @include breakpoint(xss) {
+        font-size: 40%;
+    }
+}
+
+// heading
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $heading-font;
+    color: $headnig-font-color;
+}
+
+h1,
+.h1 {
+    font-size: 45px;
+    @include breakpoint(md) {
+        font-size: 40px;
+    }
+    @include breakpoint(xs) {
+        font-size: 38px;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 38px;
+    @include breakpoint(md) {
+        font-size: 36px;
+    }
+    @include breakpoint(xs) {
+        font-size: 34px;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 30px;
+    @include breakpoint(md) {
+        font-size: 28px;
+    }
+    @include breakpoint(xs) {
+        font-size: 25px;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 25px;
+    @include breakpoint(md) {
+        font-size: 23px;
+    }
+    @include breakpoint(xs) {
+        font-size: 20px;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+h6,
+.h6 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    font-family: $body-font;
+    line-height: 36px;
+    color: #777d85;
+    @include breakpoint(xs){
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.title-font {
+    font-family: $heading-font !important;
+}
+
+.body-font {
+    font-family: $body-font !important;
+}
+.section-title-wrapper{
+    max-width: 700px;
+}
+.type-writting{
+    display: inline-block;
+}
+.rt-section-title {
+    text-transform: capitalize;
+    font-size: 50px;
+    line-height: 55px;
+    margin: 0 0 10px;
+    font-weight: 300;
+   
+    @include afterparent();
+    &.aos-animate{
+        
+    
+        border-right: 2px solid #000;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 2s steps(40, end) 1 normal,blink-caret .75s infinite normal;
+    }
+    @include breakpoint(xs){
+        font-size: 32px;
+        line-height: 1.4;
+    }
+   
+    
+    
+   
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000; }
+  }
+
+.text-white {
+    .rt-section-title {
+        color: #ffffff;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #fff;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #fff;
+    }
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style-type: none;
+    }
+}
+.a-btn {
+    position: relative;
+    color: #fff;
+    background: $primary-color;
+    // border: 1px solid #00ABA5;
+    // border-radius: 3px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    padding: 10.5px 44px;
+    transition: all .3s ease;
+    &:hover{
+        background: transparent;
+        color: $primary-color;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        border: 1px solid $primary-color;
+    }
+    // &.b-tran{
+    //     background: transparent;
+    //     &:hover{
+    //         background: #00ABA5;
+    //         color: #fff;
+    //     }
+    // }
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grey{
+    background: #BFBFBF;
+}
+.dark{
+    background: #101010;
+}
